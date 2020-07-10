@@ -17,7 +17,6 @@ function init() {
             removeFile('./output/README.MD');
             console.log('Generating New README.MD in output folder...');
             writeToFile('./output/README.md',answers);
-            console.log(JSON.stringify(answers, null, '\n'));
         });
 }
 
