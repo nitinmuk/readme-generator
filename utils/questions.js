@@ -44,7 +44,7 @@ const questions = [
         type : 'input',
         message : 'Enter your email address',
         name : 'email'
-    } 
+    }
 ];
 
 module.exports = questions;

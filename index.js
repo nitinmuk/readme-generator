@@ -6,12 +6,7 @@ const fs = require('fs');
 
 // function to write README file
 function writeToFile(fileName, data) {
-fs.appendFile(fileName, 
-`${gmd('Title')}
-${data.projectTitle}
-${gmd('Description')}
-${data.projectDesc}
-${gmd('Table of Contents')}`, handleError);
+fs.appendFile(fileName,gmd(data), handleError);
 }
 
 // function to initialize program
@@ -19,9 +14,9 @@ function init() {
     console.log('Hi, Welcome to ReadMe generator');
     inquirer.prompt(questions).then(
         answers => {
-            removeFile('./README.MD');
-            console.log('Generating New README.MD ...');
-            writeToFile('README.md',answers);
+            removeFile('./output/README.MD');
+            console.log('Generating New README.MD in output folder...');
+            writeToFile('./output/README.md',answers);
             console.log(JSON.stringify(answers, null, '\n'));
         });
 }
@@ -38,7 +33,7 @@ const removeFile = path => {
     try {
         if(fs.existsSync(path))
         {
-            console.log('Deleting Current README.MD..');
+            console.log('Deleting current README.MD from output folder..');
             fs.unlink(path, handleError);
         }
     } catch(error) {

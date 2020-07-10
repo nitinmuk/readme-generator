@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/License-Unlicense-green)](#ISC)
+[![](https://img.shields.io/badge/License-Unlicense-green)](#license)
 # ReadMe Generator
 ## Description
 This is a NPM based CLI application which can be used to generate read me file for various projects. ReadMe is generated into output folder.
