@@ -1,4 +1,4 @@
-(https://img.shields.io/badge/License-ISC-green)
+[(https://img.shields.io/badge/License-ISC-green)]
 # ReadMe Generator
 
 ## Description
