@@ -24,6 +24,6 @@ ${data.testInst}
 ${data.license}
 ## Questions
 * Please raise a request at [github](https://github.com/${data.gitHubUser})
-* For any private question/enquiry, please reach out to my [email](https://mailto:${data.email})`;
+* For any private question/enquiry, please reach out to my email:${data.email}`;
   }  
   module.exports = generateMarkdown;  
