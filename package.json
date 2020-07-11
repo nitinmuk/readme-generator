@@ -4,7 +4,7 @@
   "description": "it is a CLI app to generate read me based on user input",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": ""
   },
   "repository": {
     "type": "git",
