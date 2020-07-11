@@ -1,41 +1,30 @@
-// array of questions for user
 const questions = require('./utils/questions');
 const gmd = require('./utils/generateMarkdown');
 const inquirer = require("inquirer");
 const fs = require('fs');
 
-// function to write README file
+/**
+ * it generates markdown code in README.md using fs and generateMarkdown modules
+ * @param {name of file which need to be generated} fileName 
+ * @param {holds answers for each question provided by user} data 
+ */
 function writeToFile(fileName, data) {
-fs.appendFile(fileName,gmd(data), handleError);
+    fs.writeFile(fileName, gmd(data), error =>
+        error ? console.log(error) : console.log("README.md generated successfully in output folder.")
+    );
 }
 
-// function to initialize program
+/**
+ * function to trigger questions and collect answers and then generate README in output folder.
+ */
 function init() {
     console.log('Hi, Welcome to ReadMe generator');
     inquirer.prompt(questions).then(
         answers => {
-            removeFile('./output/README.MD');
             console.log('Generating New README.MD in output folder...');
-            writeToFile('./output/README.md',answers);
+            writeToFile('./output/README.md', answers);
         });
 }
 
-// function call to initialize program
+// function call to execute program
 init();
-
-const handleError = error => {
-    if(error) {
-        console.log(error);
-    }
-}
-const removeFile = path => {
-    try {
-        if(fs.existsSync(path))
-        {
-            console.log('Deleting current README.MD from output folder..');
-            fs.unlink(path, handleError);
-        }
-    } catch(error) {
-        console.log(error);
-    }
-}

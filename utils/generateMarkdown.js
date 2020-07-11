@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-    return `[![](https://img.shields.io/badge/License-${data.license}-green)](#license)
-# ${data.projectTitle}
+    return `# ${data.projectTitle}
+[![](https://img.shields.io/badge/License-${data.license}-green)](#license)
 ## Description
 ${data.projectDesc}
 ## Table of Contents
@@ -20,9 +20,17 @@ ${data.contriGuide}
 ## Tests
 ${data.testInst}
 ## License
-${data.license}
+${getLicenseNotice(data.license)}
 ## Questions
 * Please raise a request at [github](https://github.com/${data.gitHubUser})
-* For any private question/enquiry, please reach out to my email:${data.email}`;
-  }  
+* For any private question/enquiry, please reach out to my email: ${data.email}`;
+}
+
+function getLicenseNotice(license)
+{
+  return license==="None" ? `This application is not covered under any license currently`:`This application is covered by ${license} license`;
+}
+    
+  
+  
   module.exports = generateMarkdown;  

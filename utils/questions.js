@@ -1,3 +1,4 @@
+// array of questions for user
 const questions = [
     {
         type : 'input',
@@ -5,17 +6,17 @@ const questions = [
         name : 'projectTitle'
     },
     {
-        type : 'editor',
+        type : 'input',
         message : 'Enter project description:',
         name : 'projectDesc'
     },
     {
-        type : 'editor',
+        type : 'input',
         message : 'Enter installation instructions',
         name : 'InstalInst'
     },
     {
-        type : 'editor',
+        type : 'input',
         message : 'Enter usage information',
        name : 'usageInfo'
     },
@@ -33,7 +34,7 @@ const questions = [
         type : 'list',
         message : 'Choose a license out of following options: ',
         name : 'license',
-        choices : ['GNU GPLv3','MIT', 'ISC','Unlicense']
+        choices : ['GNU GPLv3','MIT', 'ISC','Unlicense', 'None']
     },
     {
         type : 'input',
