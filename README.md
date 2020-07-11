@@ -13,6 +13,7 @@ This is a CLI based application to generate readme.
 Please clone/download and install node.js,npm and inquirer package.
 ## Usage
 This can be used to generate read me files.
+For usage video click [here](https://drive.google.com/file/d/1rHbbRi2daaqHGgOK7qYox9uhE1nRD2yM/view)
 ## Contributing
 You are most welcome to contribute to this project. There are various ways to contribute:
 1. Raise a pull request.
