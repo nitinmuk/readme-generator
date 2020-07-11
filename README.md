@@ -1,9 +1,8 @@
-[![](https://img.shields.io/badge/License-Unlicense-green)](#ISC)
 # ReadMe Generator
+[![](https://img.shields.io/badge/License-None-green)](#license)
 ## Description
-This is a NPM based CLI application which can be used to generate read me file for various projects. ReadMe is generated into output folder.
+This is a CLI based application to generate readme.
 ## Table of Contents
-* [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
@@ -11,18 +10,17 @@ This is a NPM based CLI application which can be used to generate read me file f
 * [Tests](#tests)
 * [Questions](#questions)
 ## Installation
-Download and Install node.js, npm and inquirer package.
+Please clone/download and install node.js,npm and inquirer package.
 ## Usage
-It can be used to generate ReadMe file for various projects.
+This can be used to generate read me files.
 ## Contributing
-You are most welcome to contribute the project. There are various ways to contribute:
+You are most welcome to contribute to this project. There are various ways to contribute:
 1. Raise a pull request.
 2. Raise a new feature request.
-3. Raise a defect/issue.
+3. Raise a defect.
 ## Tests
-Run node index.js to run the command line interface.
+Run node index.js from command line and answers all questions appropriately.Finally, please verify the output folder and confirm appropriate README.MD file has been generated.
 ## License
-Unlicense
+This application is not covered by any license currently.
 ## Questions
 * Please raise a request at [github](https://github.com/nitinmuk)
-* For any private question/enquiry, please reach out to my [email](https://mailto:nitinmukes@gmail.com)
